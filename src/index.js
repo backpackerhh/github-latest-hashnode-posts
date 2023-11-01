@@ -7,7 +7,7 @@ const DEFAULT_HASHNODE_GQL_ENDPOINT = 'https://gql.hashnode.com';
 const DEFAULT_README_FILE = './README.md';
 const DEFAULT_OPENING_COMMENT = `<!-- HASHNODE_POSTS:START -->`;
 const DEFAULT_CLOSING_COMMENT = `<!-- HASHNODE_POSTS:END -->`;
-const DEFAULT_MAX_POSTS = 5;
+const DEFAULT_MAX_POSTS = 3;
 const DEFAULT_COMMIT_MESSAGE = 'Update latest blog posts';
 
 const httpClient = new http.HttpClient('github-action-hashnode-posts');

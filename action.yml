@@ -24,7 +24,7 @@ inputs:
     required: false
   MAX_POSTS:
     description: The number of posts that should be displayed.
-    default: '5'
+    default: '3'
     required: false
   COMMIT_MESSAGE:
     description: Commit message for the update commit.
