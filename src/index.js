@@ -3,7 +3,6 @@ const core = require('@actions/core');
 const { exec } = require('@actions/exec');
 const http = require('@actions/http-client');
 
-
 const DEFAULT_HASHNODE_GQL_ENDPOINT = 'https://gql.hashnode.com';
 const DEFAULT_README_FILE = './README.md';
 const DEFAULT_OPENING_COMMENT = `<!-- HASHNODE_POSTS:START -->`;
@@ -49,6 +48,7 @@ async function getLatestHashnodePosts(options) {
 									title
 									brief
 									publishedAt
+									url
 									coverImage {
 										url
 									}
@@ -133,10 +133,10 @@ function formatPosts(posts) {
 	${posts
 			.map(
 				(post) => `<tr>
-			<td><img src="${post.coverImage.url}" width="500" height="auto" /></td>
+			<td><a href="${post.url}"><img src="${post.coverImage.url}" width="500" height="auto" /></a></td>
 			<td>
 				<sup>${post.publishedAt}</sup><br />
-				<b>${post.title}</b>
+				<a href="${post.url}"><b>${post.title}</b></a>
 				<p>${post.brief.replaceAll('\n', ' ')}</p>
 			</td>
 		</tr>`,
