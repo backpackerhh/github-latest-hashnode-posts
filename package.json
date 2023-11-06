@@ -18,12 +18,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/JannikWempe/github-latest-hashnode-posts.git"
+		"url": "git+https://github.com/backpackerhh/github-latest-hashnode-posts.git"
 	},
 	"bugs": {
-		"url": "https://github.com/JannikWempe/github-latest-hashnode-posts/issues"
+		"url": "https://github.com/backpackerhh/github-latest-hashnode-posts/issues"
 	},
-	"homepage": "https://github.com/JannikWempe/github-latest-hashnode-posts#readme",
+	"homepage": "https://github.com/backpackerhh/github-latest-hashnode-posts#readme",
 	"dependencies": {
 		"@actions/core": "^1.10.0",
 		"@actions/exec": "^1.1.1",
