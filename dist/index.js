@@ -27284,7 +27284,7 @@ function formatPosts(posts) {
 				(post) => `<tr>
 			<td><a href="${post.url}"><img src="${post.coverImage.url}" width="500" height="auto" /></a></td>
 			<td>
-				<sup>${post.publishedAt}</sup><br />
+				<sup>${new Date(post.publishedAt).toUTCString()}</sup><br />
 				<a href="${post.url}"><b>${post.title}</b></a>
 				<p>${post.brief.replaceAll('\n', ' ')}</p>
 			</td>
