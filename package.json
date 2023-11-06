@@ -4,7 +4,7 @@
 	"description": "Updates your README with the latest posts one of your Hashnode publications.",
 	"main": "src/index.js",
 	"scripts": {
-		"preinstall": "npx only-allow pnpm",
+		"preinstall": "npx only-allow npm",
 		"prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt"
 	},
 	"keywords": [
@@ -28,7 +28,6 @@
 		"@actions/core": "^1.10.0",
 		"@actions/exec": "^1.1.1",
 		"@actions/http-client": "^2.1.1",
-		"@vercel/ncc": "^0.36.1",
-		"pnpm": "^8.10.2"
+		"@vercel/ncc": "^0.36.1"
 	}
 }
